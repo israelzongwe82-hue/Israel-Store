@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israël Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎮 Israël Games</h1>
+        <p>Jouez, réfléchissez et gagnez des points !</p>
+    </header>
+
+    <main>
+
+        <section id="accueil">
+            <h2>Bienvenue dans Israël Games 👋</h2>
+
+            <p>Choisissez votre jeu :</p>
+
+            <div class="menu">
+                <button onclick="ouvrirJeu('quiz')">
+                    🧠 Quiz
+                </button>
+
+                <button onclick="ouvrirJeu('maths')">
+                    🔢 Défi Maths
+                </button>
+
+                <button onclick="ouvrirJeu('football')">
+                    ⚽ Football Quiz
+                </button>
+            </div>
+
+            <div class="score-box">
+                🏆 Meilleur score : <span id="meilleurScore">0</span>
+            </div>
+        </section>
+
+        <section id="jeu" class="cache">
+
+            <button class="retour" onclick="retourAccueil()">
+                ← Retour
+            </button>
+
+            <h2 id="titreJeu"></h2>
+
+            <p id="question"></p>
+
+            <div id="reponses"></div>
+
+            <p id="resultat"></p>
+
+            <button id="suivant" class="cache" onclick="questionSuivante()">
+                Question suivante →
+            </button>
+
+            <div class="score-box">
+                Score : <span id="score">0</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Israël Games © 2026</p>
+        <p>Créé par Israël Zongwe</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
